@@ -1,0 +1,22 @@
+{% extends '::base.html.twig' %}
+{% form_theme delete_from 'bootstrap_3_horizontal_layout.html.twig' %}
+{% block body -%}
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Post</div>
+        <div class="panel-body">
+            <p>{{ post.text }}</p>
+        </div>
+
+
+        <ul class="list-group">
+            <li class="list-group-item">{{ post.name }}</li>
+            <li class="list-group-item">{{ post.email }}</li>
+            <li class="list-group-item">{{ post.address }}</li>
+            <li class="list-group-item"> {{ form(delete_from) }}</li>
+
+        </ul>
+    </div>
+    {{ form(delete_from) }}
+{% endblock %}
+

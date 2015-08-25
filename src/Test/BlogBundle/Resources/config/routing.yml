@@ -1,0 +1,48 @@
+post:
+    path: /
+    defaults: { _controller: "TestBlogBundle:Post:index" }
+
+post_list:
+  path: /posts
+  defaults: { _controller: "TestBlogBundle:Post:index" }
+
+post_show:
+    path: /show/{id}
+    defaults: { _controller: "TestBlogBundle:Post:show" }
+
+post_new:
+    path: /new
+    defaults: { _controller: "TestBlogBundle:Post:new" }
+
+post_create:
+    path: /create
+    defaults: { _controller: "TestBlogBundle:Post:create" }
+    requirements: { _method: post }
+
+post_edit:
+    path: /edit/{id}
+    defaults: { _controller: "TestBlogBundle:Post:edit" }
+
+post_update:
+    path: /update/{id}
+    defaults: { _controller: "TestBlogBundle:Post:update" }
+    requirements: { _method: post|put }
+
+post_delete:
+    path: /delete/{id}
+    defaults: { _controller: "TestBlogBundle:Post:delete" }
+    requirements: { _method: post|delete }
+
+post_remove:
+    path: /remove/{id}
+    defaults: { _controller: "TestBlogBundle:Post:remove" }
+
+login_route:
+    path: /login
+    defaults: { _controller: TestBlogBundle:Security:login }
+
+login_check:
+    path: /login_check
+
+logout:
+    path: /logout
