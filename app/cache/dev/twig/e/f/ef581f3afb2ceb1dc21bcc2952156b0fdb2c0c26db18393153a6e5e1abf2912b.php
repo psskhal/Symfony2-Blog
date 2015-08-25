@@ -15,8 +15,8 @@ class __TwigTemplate_ef581f3afb2ceb1dc21bcc2952156b0fdb2c0c26db18393153a6e5e1abf
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_352d5b11445a892b48016ca3177013562d47df86afd58297a75258060c5d42be = $this->env->getExtension("native_profiler");
-        $__internal_352d5b11445a892b48016ca3177013562d47df86afd58297a75258060c5d42be->enter($__internal_352d5b11445a892b48016ca3177013562d47df86afd58297a75258060c5d42be_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TestBlogBundle:security:login.html.twig"));
+        $__internal_43931f357e2aa2a3eae00c94c48477e3801c31dd3629ec60fbcfca7d6dd33e05 = $this->env->getExtension("native_profiler");
+        $__internal_43931f357e2aa2a3eae00c94c48477e3801c31dd3629ec60fbcfca7d6dd33e05->enter($__internal_43931f357e2aa2a3eae00c94c48477e3801c31dd3629ec60fbcfca7d6dd33e05_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TestBlogBundle:security:login.html.twig"));
 
         // line 1
         if ((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error"))) {
@@ -46,7 +46,7 @@ class __TwigTemplate_ef581f3afb2ceb1dc21bcc2952156b0fdb2c0c26db18393153a6e5e1abf
     <button type=\"submit\">login</button>
 </form>";
         
-        $__internal_352d5b11445a892b48016ca3177013562d47df86afd58297a75258060c5d42be->leave($__internal_352d5b11445a892b48016ca3177013562d47df86afd58297a75258060c5d42be_prof);
+        $__internal_43931f357e2aa2a3eae00c94c48477e3801c31dd3629ec60fbcfca7d6dd33e05->leave($__internal_43931f357e2aa2a3eae00c94c48477e3801c31dd3629ec60fbcfca7d6dd33e05_prof);
 
     }
 

@@ -21,20 +21,20 @@ class __TwigTemplate_1dc24ceec07c171764f05e44ebab9375583533c1eab44cb5945a90af794
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_df76ae0a6e1b1f1f79c86a3ef9535b1257db628a09d6fbc3aab212d14a8b483b = $this->env->getExtension("native_profiler");
-        $__internal_df76ae0a6e1b1f1f79c86a3ef9535b1257db628a09d6fbc3aab212d14a8b483b->enter($__internal_df76ae0a6e1b1f1f79c86a3ef9535b1257db628a09d6fbc3aab212d14a8b483b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TestBlogBundle:Post:index.html.twig"));
+        $__internal_93537f4bd14ba9e84c7c2a4f52ff1f5bd4ef8b9d2ed96ce8b8aea0443fcee78b = $this->env->getExtension("native_profiler");
+        $__internal_93537f4bd14ba9e84c7c2a4f52ff1f5bd4ef8b9d2ed96ce8b8aea0443fcee78b->enter($__internal_93537f4bd14ba9e84c7c2a4f52ff1f5bd4ef8b9d2ed96ce8b8aea0443fcee78b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TestBlogBundle:Post:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_df76ae0a6e1b1f1f79c86a3ef9535b1257db628a09d6fbc3aab212d14a8b483b->leave($__internal_df76ae0a6e1b1f1f79c86a3ef9535b1257db628a09d6fbc3aab212d14a8b483b_prof);
+        $__internal_93537f4bd14ba9e84c7c2a4f52ff1f5bd4ef8b9d2ed96ce8b8aea0443fcee78b->leave($__internal_93537f4bd14ba9e84c7c2a4f52ff1f5bd4ef8b9d2ed96ce8b8aea0443fcee78b_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_77f59c9d91612ab9bd8fa355346921f0486cd5d34e092c067b3fd73d34ed16fd = $this->env->getExtension("native_profiler");
-        $__internal_77f59c9d91612ab9bd8fa355346921f0486cd5d34e092c067b3fd73d34ed16fd->enter($__internal_77f59c9d91612ab9bd8fa355346921f0486cd5d34e092c067b3fd73d34ed16fd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_d237a684ce81784da7f02bb3ea19da50d73e648f79f782ce88136562a3ed23be = $this->env->getExtension("native_profiler");
+        $__internal_d237a684ce81784da7f02bb3ea19da50d73e648f79f782ce88136562a3ed23be->enter($__internal_d237a684ce81784da7f02bb3ea19da50d73e648f79f782ce88136562a3ed23be_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "<div class=\"panel panel-default\">
@@ -94,91 +94,14 @@ class __TwigTemplate_1dc24ceec07c171764f05e44ebab9375583533c1eab44cb5945a90af794
         </table>
     </div>
 
-    <div class=\"pagination\">
-        <form id= \"paginator\" name=\"paginator\" method=\"get\" action=\"#\" >
-            <label for=\"limit\">Items to show on the page: </label>
-            <select name=\"limit\" id=\"limit\" onchange=\"javascript:document.forms.paginator.submit()\">
-                ";
-        // line 37
-        $context['_parent'] = (array) $context;
-        $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["paginator"]) ? $context["paginator"] : $this->getContext($context, "paginator")), "options", array()));
-        foreach ($context['_seq'] as $context["_key"] => $context["opt"]) {
-            // line 38
-            echo "                    ";
-            if (($context["opt"] > 0)) {
-                // line 39
-                echo "                        <option value=\"";
-                echo twig_escape_filter($this->env, $context["opt"], "html", null, true);
-                echo "\" ";
-                if (($this->getAttribute((isset($context["paginator"]) ? $context["paginator"] : $this->getContext($context, "paginator")), "limit", array()) == $context["opt"])) {
-                    echo "selected ";
-                }
-                echo ">";
-                echo twig_escape_filter($this->env, $context["opt"], "html", null, true);
-                echo "</option>
-                    ";
-            }
-            // line 41
-            echo "                ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['opt'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 42
-        echo "                <option value=\"0\" ";
-        if (($this->getAttribute((isset($context["paginator"]) ? $context["paginator"] : $this->getContext($context, "paginator")), "limit", array()) == 0)) {
-            echo "selected";
-        }
-        echo ">All</option>
-            </select>
-        </form>
-        Go to page:<br />
-        <ul  class=\"pagination\">
-            ";
-        // line 47
-        $context['_parent'] = (array) $context;
-        $context['_seq'] = twig_ensure_traversable(range(1, $this->getAttribute((isset($context["paginator"]) ? $context["paginator"] : $this->getContext($context, "paginator")), "numpages", array())));
-        foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
-            // line 48
-            echo "                ";
-            if (($context["i"] == $this->getAttribute((isset($context["paginator"]) ? $context["paginator"] : $this->getContext($context, "paginator")), "currentpage", array()))) {
-                // line 49
-                echo "                    <li><a class=\"active\" href=\"";
-                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paginator"]) ? $context["paginator"] : $this->getContext($context, "paginator")), "currentUrl", array()), "html", null, true);
-                echo "?limit=";
-                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paginator"]) ? $context["paginator"] : $this->getContext($context, "paginator")), "limit", array()), "html", null, true);
-                echo "&amp;page=";
-                echo twig_escape_filter($this->env, $context["i"], "html", null, true);
-                echo "\">";
-                echo twig_escape_filter($this->env, $context["i"], "html", null, true);
-                echo "</a></li>
-                ";
-            } else {
-                // line 51
-                echo "                    <li><a href=\"";
-                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paginator"]) ? $context["paginator"] : $this->getContext($context, "paginator")), "currentUrl", array()), "html", null, true);
-                echo "?limit=";
-                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paginator"]) ? $context["paginator"] : $this->getContext($context, "paginator")), "limit", array()), "html", null, true);
-                echo "&amp;page=";
-                echo twig_escape_filter($this->env, $context["i"], "html", null, true);
-                echo "\">";
-                echo twig_escape_filter($this->env, $context["i"], "html", null, true);
-                echo "</a></li>
-                ";
-            }
-            // line 53
-            echo "            ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 54
-        echo "        </ul>
-    </div>
-
+    ";
+        // line 33
+        $this->loadTemplate("TestBlogBundle:Common:paginator.html.twig", "TestBlogBundle:Post:index.html.twig", 33)->display($context);
+        // line 34
+        echo "
 ";
         
-        $__internal_77f59c9d91612ab9bd8fa355346921f0486cd5d34e092c067b3fd73d34ed16fd->leave($__internal_77f59c9d91612ab9bd8fa355346921f0486cd5d34e092c067b3fd73d34ed16fd_prof);
+        $__internal_d237a684ce81784da7f02bb3ea19da50d73e648f79f782ce88136562a3ed23be->leave($__internal_d237a684ce81784da7f02bb3ea19da50d73e648f79f782ce88136562a3ed23be_prof);
 
     }
 
@@ -194,6 +117,6 @@ class __TwigTemplate_1dc24ceec07c171764f05e44ebab9375583533c1eab44cb5945a90af794
 
     public function getDebugInfo()
     {
-        return array (  176 => 54,  170 => 53,  158 => 51,  146 => 49,  143 => 48,  139 => 47,  128 => 42,  122 => 41,  110 => 39,  107 => 38,  103 => 37,  93 => 29,  82 => 24,  78 => 23,  74 => 22,  70 => 21,  66 => 20,  62 => 19,  59 => 18,  55 => 17,  40 => 4,  34 => 3,  11 => 1,);
+        return array (  101 => 34,  99 => 33,  93 => 29,  82 => 24,  78 => 23,  74 => 22,  70 => 21,  66 => 20,  62 => 19,  59 => 18,  55 => 17,  40 => 4,  34 => 3,  11 => 1,);
     }
 }

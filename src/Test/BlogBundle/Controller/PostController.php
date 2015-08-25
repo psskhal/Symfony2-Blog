@@ -29,8 +29,7 @@ class PostController extends Controller {
         $PostsCount = $repo->getPostsCount();
         $paginator = new Paginator($PostsCount, $this->generateUrl('post_list'));
 
-        $posts = $repo->getPostsListWithPagination($order_by, $paginator->getOffset(), $paginator->getLimit
-        ());
+        $posts = $repo->getPostsListWithPagination($order_by, $paginator->getOffset(), $paginator->getLimit());
 
         return $this->render('TestBlogBundle:Post:index.html.twig', array(
             'posts' => $posts,

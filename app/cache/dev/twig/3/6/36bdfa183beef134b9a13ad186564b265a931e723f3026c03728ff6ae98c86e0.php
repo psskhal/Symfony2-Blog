@@ -21,23 +21,23 @@ class __TwigTemplate_36bdfa183beef134b9a13ad186564b265a931e723f3026c03728ff6ae98
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c884a76122af83ce534a02e8f4f67789b30daafbb183a302616c227648b4a08f = $this->env->getExtension("native_profiler");
-        $__internal_c884a76122af83ce534a02e8f4f67789b30daafbb183a302616c227648b4a08f->enter($__internal_c884a76122af83ce534a02e8f4f67789b30daafbb183a302616c227648b4a08f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TestBlogBundle:Post:edit.html.twig"));
+        $__internal_f753427f647e35d23a45f861908390f86c787c652e04147d00dc952b397c97a4 = $this->env->getExtension("native_profiler");
+        $__internal_f753427f647e35d23a45f861908390f86c787c652e04147d00dc952b397c97a4->enter($__internal_f753427f647e35d23a45f861908390f86c787c652e04147d00dc952b397c97a4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TestBlogBundle:Post:edit.html.twig"));
 
         // line 2
         $this->env->getExtension('form')->renderer->setTheme((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), array(0 => "bootstrap_3_horizontal_layout.html.twig"));
         // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_c884a76122af83ce534a02e8f4f67789b30daafbb183a302616c227648b4a08f->leave($__internal_c884a76122af83ce534a02e8f4f67789b30daafbb183a302616c227648b4a08f_prof);
+        $__internal_f753427f647e35d23a45f861908390f86c787c652e04147d00dc952b397c97a4->leave($__internal_f753427f647e35d23a45f861908390f86c787c652e04147d00dc952b397c97a4_prof);
 
     }
 
     // line 4
     public function block_body($context, array $blocks = array())
     {
-        $__internal_61ad4c342f135f764e312c93da22adb2f842396d46517b8e51ae27fe14358823 = $this->env->getExtension("native_profiler");
-        $__internal_61ad4c342f135f764e312c93da22adb2f842396d46517b8e51ae27fe14358823->enter($__internal_61ad4c342f135f764e312c93da22adb2f842396d46517b8e51ae27fe14358823_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_898d0682713f5578f65ef277ed0be0d5bbc6cc6cd9f9b70b54df45e0df015460 = $this->env->getExtension("native_profiler");
+        $__internal_898d0682713f5578f65ef277ed0be0d5bbc6cc6cd9f9b70b54df45e0df015460->enter($__internal_898d0682713f5578f65ef277ed0be0d5bbc6cc6cd9f9b70b54df45e0df015460_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 5
         echo "<h1>Edit Post</h1>
@@ -48,7 +48,7 @@ class __TwigTemplate_36bdfa183beef134b9a13ad186564b265a931e723f3026c03728ff6ae98
         echo "
 ";
         
-        $__internal_61ad4c342f135f764e312c93da22adb2f842396d46517b8e51ae27fe14358823->leave($__internal_61ad4c342f135f764e312c93da22adb2f842396d46517b8e51ae27fe14358823_prof);
+        $__internal_898d0682713f5578f65ef277ed0be0d5bbc6cc6cd9f9b70b54df45e0df015460->leave($__internal_898d0682713f5578f65ef277ed0be0d5bbc6cc6cd9f9b70b54df45e0df015460_prof);
 
     }
 
